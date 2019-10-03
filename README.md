@@ -15,7 +15,7 @@
 ### problems
 
 - *cask will break if some app from the list is already installed from a different source.* Likely not hard to solve with good bash skills. 
-- *cask's Google Drive File Stream provokes a password prompt.* I moved it to the bottom of the list to go around it, [ptb/mac-setup](https://github.com/ptb/mac-setup) probably contains a better solution
+- *some cask packages provoke a password prompt.* I moved them to the bottom of the list to go around it, [ptb/mac-setup](https://github.com/ptb/mac-setup) probably contains a better solution
 
 
 ### sources
