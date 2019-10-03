@@ -14,8 +14,8 @@
 
 ### problems
 
-- *cask will break if some app from the list is already installed from a different source.* Likely not hard to solve with good bash skills. 
-- *some cask packages provoke a password prompt.* I moved them to the bottom of the list to go around it, [ptb/mac-setup](https://github.com/ptb/mac-setup) probably contains a better solution
+- *cask will break if some app from the list is already installed from a different source.* To avoid this and have the whole list install, do this on a fresh start or remove apps you already have. Likely very easy to solve with good bash skills (output redirect?). 
+- *some cask packages provoke a password prompt or take long* I moved them to the bottom of the list to go around it, [ptb/mac-setup](https://github.com/ptb/mac-setup) probably contains a better solution.
 
 
 ### sources
