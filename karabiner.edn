@@ -1,0 +1,50 @@
+{
+
+:profiles
+	{:Default 
+	  {:default true
+	  :alone 200
+	  :held 100
+	  :delay 100
+	  :sim 50}
+	}
+
+:simlayers {:caps-mode {:key :caps_lock}}
+
+:main [
+       {:des "caps (other)"
+         :rules [:caps-mode
+                 [:j :down_arrow]
+                 [:quote :down_arrow]
+                 [:semicolon :up_arrow]
+                 [:k :up_arrow]
+                 [:l :right_arrow]
+                 [:h :left_arrow]
+                 [:m :delete_or_backspace]
+                 [:!Cm :!Cdelete_or_backspace]
+                 [:!Om :!Odelete_or_backspace]]}
+       {:des "caps_lock:esc/ctrl" 
+          :rules [[:##caps_lock :left_control nil {:alone :escape}]]}
+      ]
+
+
+
+;; CHEATSHEEET 
+;; (not parsed, despite being uncommented)
+;; ! stand for mandatory
+;; # stand for optional
+;; C T O S for left command control optional shift
+;; F for fn
+;; need to prefix C T O S F with ! or #
+:cheatsheet {:!Ca "command a" ;; mandatory left_command
+            :!Ta "control a" ;; mandatory left_control
+            :!Oa "option a"
+            :!Sa "shift a"
+            :#Sa "shift a" ;; keycode a, optional left_shift
+            :!CTOa "command control option a"
+            :!Cspacebar "command space"
+            :!Fa "fn a"
+            :##a "keycode a optional any"
+            :!!a "mandatory hyper(control command option shift) a "}
+}
+
