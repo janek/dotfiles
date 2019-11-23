@@ -1,61 +1,56 @@
-{
-
-:profiles
-	{:Default 
-	  {:default true
-	  :alone 200
-	  :held 100
-	  :delay 100
-	  :sim 50}
-	}
+{:profiles
+ {:Default
+  {:default true
+   :alone 200
+   :held 100
+   :delay 100
+   :sim 50}}
 ; mmroczka: 50, 300, 300, 300
 ; yqrashawn: 50, 500, 500, 500
 ; nikivi: 50, 80, 120, 70
 
  :templates {:alfred "osascript -e 'tell application \"Alfred 4\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
-             :open "open \"%s\""
-             }
+             :open "open \"%s\""}
 
-:simlayers {:caps-mode {:key :caps_lock}
-            :semicolon-mode {:key :semicolon}
-            :a-mode {:key :a}
-            :s-mode {:key :s}
-            }
+ :simlayers {:caps-mode {:key :caps_lock}
+             :semicolon-mode {:key :semicolon}
+             :a-mode {:key :a}
+             :s-mode {:key :s}
+             :w-mode {:key :w}
+             :d-mode {:key :d}}
 
-:main [
-    {:des "(mapping) semicolon -> shift (with letters only)"
-      :rules [:semicolon-mode
-              [:q :!Sq]
-              [:w :!Sw]
-              [:e :!Se]
-              [:r :!Sr]
-              [:t :!St]
-              [:y :!Sy]
-              [:u :!Su]
-              [:i :!Si]
-              [:o :!So]
-              [:p :!Sp]
-              [:a :!Sa]
-              [:s :!Ss]
-              [:d :!Sd]
-              [:f :!Sf]
-              [:g :!Sg]
-              [:h :!Sh]
-              [:j :!Sj]
-              [:k :!Sk]
-              [:l :!Sl]
-              [:z :!Sz]
-              [:x :!Sx]
-              [:c :!Sc]
-              [:v :!Sv]
-              [:b :!Sb]
-              [:n :!Sn]
-              [:m :!Sm]
-              [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
-            ]
-      }
-    {:des "(mostly mapping) akey -> ctrl"
+ :main [{:des "(mapping) semicolon -> shift (with letters only)"
+         :rules [:semicolon-mode
+                 [:q :!Sq]
+                 [:w :!Sw]
+                 [:e :!Se]
+                 [:r :!Sr]
+                 [:t :!St]
+                 [:y :!Sy]
+                 [:u :!Su]
+                 [:i :!Si]
+                 [:o :!So]
+                 [:p :!Sp]
+                 [:a :!Sa]
+                 [:s :!Ss]
+                 [:d :!Sd]
+                 [:f :!Sf]
+                 [:g :!Sg]
+                 [:h :!Sh]
+                 [:j :!Sj]
+                 [:k :!Sk]
+                 [:l :!Sl]
+                 [:z :!Sz]
+                 [:x :!Sx]
+                 [:c :!Sc]
+                 [:v :!Sv]
+                 [:b :!Sb]
+                 [:n :!Sn]
+                 [:m :!Sm]
+                 [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
+                 ]}
+        {:des "(mostly mapping) akey -> ctrl"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Selection -> Google
                  [:open_bracket :!Topen_bracket]
@@ -129,55 +124,90 @@
                  [:open_bracket [:km "Selected text -> TODO"]]
                  [:period [:km "Tasks from apps -> TODO"]]
                  [:o :!CTO9]]} ; Search Typinator
-    ; TODO: check Nikita's 
-    {:des "caps (other)"
-      :rules [:caps-mode
-              [:open_bracket :!TOopen_bracket]
-              [:close_bracket :!TOclose_bracket]
-              [:semicolon :!TOsemicolon]
-              [:quote :!TOquote]
-              [:comma :!TOcomma]
-              [:period :!TOperiod]
-              [:slash :!TOslash]
-              [:a :!TOa]
-              [:b :!TOb]
-              [:c :!Tc]
-              [:d :!Td]
-              [:e :!TOe]
-              [:f :!TOf]
-              [:g :!TOg]
-              [:h :left_arrow]
-              [:i :!TOi]
-              [:j :down_arrow]
-              [:k :up_arrow]
-              [:l :right_arrow]
-              [:m :!TOm]
-              [:n :!TOn]
-              [:o :!TOo]
-              [:p :!TOp]
-              [:q :!TOq]
-              [:r :!TOr]
-              [:s :!TOs]
-              [:t :!TOt]
-              [:u :!TOu]
-              [:v :!TOv]
-              [:w :!TOw]
-              [:x :!TOx]
-              [:y :!TOy]
-              [:z :!Tz]
-              [:1 :!TO1]
-              [:2 :!TO2]
-              [:3 :!TO3]
-              [:4 :!TO4]
-              [:5 :!TO5]
-              [:6 :!TO6]
-              [:7 :!TO7]
-              [:8 :!TO8]
-              [:9 :!TO9]
-              [:0 :!TO0]]}
-      {:des "caps_lock:esc/ctrl" 
-        :rules [[:##caps_lock :left_control nil {:alone :escape}]]}
-    ]
+
+        {:des "wkey (mostly launch apps)"
+         :rules [:w-mode
+                 [:spacebar :!CT7] ; Start Google search with selection
+                 [:e [:km "New Fantastical event"]]
+                 [:m [:km "open: Xcode"]]
+                 [:c [:km "open: Spotify"]]
+                 [:k [:km "open: Safari"]]
+                 [:d [:km "open: Activity Monitor"]]
+                 ;[:g [:km "open: Console"]]
+                 [:t [:km "open: Telegram"]]
+                 ;[:c [:km "open: Sketch"]]
+                 ;[:g [:km "open: Notion"]]
+                 ;[:i [:km "open: Chrome Canary"]]
+                 ;[:g [:km "open: SnippetsLab"]]
+                 ;[:u [:km "open: Safari Technology Preview"]]
+                 [:caps_lock [:km "open: Finder"]]
+                 [:semicolon [:km "open: Sourcetree"]]
+                 [:b [:km "open: BetterTouchTool"]]
+                 [:a :!OSC1] ; Open Dash
+                 [:r :!CTOSt] ; Open Trello
+                 ;[:h [:km "open: Paw"]]
+                 ;[:v [:km "open: Figma"]]
+                 [:f [:km "open: Things"]]
+                 [:j [:km "open: iTerm"]]
+                 [:n [:km "open: Sublime Text"]]
+                 [:l [:km "open: VS Code"]]
+                 [:o [:km "open: Keyboard Maestro"]]]}
+
+        {:des "dkey (spotify)"
+         :rules [:d-mode
+                 [:j [:km "Spotify Previous Track"]]
+                 [:k [:km "Spotify Play/Pause"]]
+                 [:l [:km "Spotify Next Track"]]
+                 [:i [:km "Spotify Volume Up"]]
+                 [:comma [:km "Spotify Volume Down"]]]}
+        ; Deprecated
+        {:des "caps (other)"
+         :rules [:caps-mode
+                 [:open_bracket :!TOopen_bracket]
+                 [:close_bracket :!TOclose_bracket]
+                 [:semicolon :!TOsemicolon]
+                 [:quote :!TOquote]
+                 [:comma :!TOcomma]
+                 [:period :!TOperiod]
+                 [:slash :!TOslash]
+                 [:a :!TOa]
+                 [:b :!TOb]
+                 [:c :!Tc]
+                 [:d :!Td]
+                 [:e :!TOe]
+                 [:f :!TOf]
+                 [:g :!TOg]
+                 [:h :left_arrow]
+                 [:i :!TOi]
+                 [:j :down_arrow]
+                 [:k :up_arrow]
+                 [:l :right_arrow]
+                 [:m :!TOm]
+                 [:n :!TOn]
+                 [:o :!TOo]
+                 [:p :!TOp]
+                 [:q :!TOq]
+                 [:r :!TOr]
+                 [:s :!TOs]
+                 [:t :!TOt]
+                 [:u :!TOu]
+                 [:v :!TOv]
+                 [:w :!TOw]
+                 [:x :!TOx]
+                 [:y :!TOy]
+                 [:z :!Tz]
+                 [:1 :!TO1]
+                 [:2 :!TO2]
+                 [:3 :!TO3]
+                 [:4 :!TO4]
+                 [:5 :!TO5]
+                 [:6 :!TO6]
+                 [:7 :!TO7]
+                 [:8 :!TO8]
+                 [:9 :!TO9]
+                 [:0 :!TO0]]}
+        {:des "caps_lock:esc/ctrl"
+         :rules [[:##caps_lock :left_control nil {:alone :escape}]]}]
 
 
 
@@ -188,15 +218,14 @@
 ;; C T O S for left command control optional shift
 ;; F for fn
 ;; need to prefix C T O S F with ! or #
-:cheatsheet {:!Ca "command a" ;; mandatory left_command
-            :!Ta "control a" ;; mandatory left_control
-            :!Oa "option a"
-            :!Sa "shift a"
-            :#Sa "shift a" ;; keycode a, optional left_shift
-            :!CTOa "command control option a"
-            :!Cspacebar "command space"
-            :!Fa "fn a"
-            :##a "keycode a optional any"
-            :!!a "mandatory hyper(control command option shift) a "}
-}
+ :cheatsheet {:!Ca "command a" ;; mandatory left_command
+              :!Ta "control a" ;; mandatory left_control
+              :!Oa "option a"
+              :!Sa "shift a"
+              :#Sa "shift a" ;; keycode a, optional left_shift
+              :!CTOa "command control option a"
+              :!Cspacebar "command space"
+              :!Fa "fn a"
+              :##a "keycode a optional any"
+              :!!a "mandatory hyper(control command option shift) a "}}
 
