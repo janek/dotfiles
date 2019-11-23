@@ -8,58 +8,176 @@
 	  :delay 100
 	  :sim 50}
 	}
+; mmroczka: 50, 300, 300, 300
+; yqrashawn: 50, 500, 500, 500
+; nikivi: 50, 80, 120, 70
 
-:simlayers {:caps-mode {:key :caps_lock}}
+ :templates {:alfred "osascript -e 'tell application \"Alfred 4\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
+             :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
+             :open "open \"%s\""
+             }
+
+:simlayers {:caps-mode {:key :caps_lock}
+            :semicolon-mode {:key :semicolon}
+            :a-mode {:key :a}
+            :s-mode {:key :s}
+            }
 
 :main [
-       {:des "caps (other)"
-         :rules [:caps-mode
-                 [:open_bracket :!TOopen_bracket]
-                 [:close_bracket :!TOclose_bracket]
-                 [:semicolon :!TOsemicolon]
-                 [:quote :!TOquote]
-                 [:comma :!TOcomma]
-                 [:period :!TOperiod]
-                 [:slash :!TOslash]
-                 [:a :!TOa]
-                 [:b :!TOb]
+    {:des "(mapping) semicolon -> shift (with letters only)"
+      :rules [:semicolon-mode
+              [:q :!Sq]
+              [:w :!Sw]
+              [:e :!Se]
+              [:r :!Sr]
+              [:t :!St]
+              [:y :!Sy]
+              [:u :!Su]
+              [:i :!Si]
+              [:o :!So]
+              [:p :!Sp]
+              [:a :!Sa]
+              [:s :!Ss]
+              [:d :!Sd]
+              [:f :!Sf]
+              [:g :!Sg]
+              [:h :!Sh]
+              [:j :!Sj]
+              [:k :!Sk]
+              [:l :!Sl]
+              [:z :!Sz]
+              [:x :!Sx]
+              [:c :!Sc]
+              [:v :!Sv]
+              [:b :!Sb]
+              [:n :!Sn]
+              [:m :!Sm]
+              [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
+            ]
+      }
+    {:des "(mostly mapping) akey -> ctrl"
+         :rules [:a-mode
+                 [:spacebar :!CT9] ; Selection -> Google
+                 [:open_bracket :!Topen_bracket]
+                 [:close_bracket :!Tclose_bracket]
+                 [:semicolon :!Tsemicolon]
+                 [:quote :!Tquote]
+                 [:comma :!Tcomma]
+                 [:period :!Tperiod]
+                 [:slash :!Tslash]
+                 [:b :!Tb]
                  [:c :!Tc]
                  [:d :!Td]
-                 [:e :!TOe]
-                 [:f :!TOf]
-                 [:g :!TOg]
-                 [:h :left_arrow]
-                 [:i :!TOi]
-                 [:j :down_arrow]
-                 [:k :up_arrow]
-                 [:l :right_arrow]
-                 [:m :!TOm]
-                 [:n :!TOn]
-                 [:o :!TOo]
-                 [:p :!TOp]
-                 [:q :!TOq]
-                 [:r :!TOr]
-                 [:s :!TOs]
-                 [:t :!TOt]
-                 [:u :!TOu]
-                 [:v :!TOv]
-                 [:w :!TOw]
-                 [:x :!TOx]
-                 [:y :!TOy]
+                 [:e :!Te]
+                 [:f :!Tf]
+                 [:g :!Tg]
+                 [:h :!Th]
+                 [:i :!Ti]
+                 [:j :!Tj]
+                 [:k :!Tk]
+                 [:l :!Tl]
+                 [:m :!Tm]
+                 [:n :!Tn]
+                 [:o :!To]
+                 [:p :!Tp]
+                 [:q :!Tq]
+                 [:r :!Tr]
+                 [:s :!Ts]
+                 [:t :!Tt]
+                 [:u :!Tu]
+                 [:v :!Tv]
+                 [:w :!Tw]
+                 [:x :!Tx]
+                 [:y :!Ty]
                  [:z :!Tz]
-                 [:1 :!TO1]
-                 [:2 :!TO2]
-                 [:3 :!TO3]
-                 [:4 :!TO4]
-                 [:5 :!TO5]
-                 [:6 :!TO6]
-                 [:7 :!TO7]
-                 [:8 :!TO8]
-                 [:9 :!TO9]
-                 [:0 :!TO0]]}
-       {:des "caps_lock:esc/ctrl" 
-          :rules [[:##caps_lock :left_control nil {:alone :escape}]]}
-      ]
+                 [:1 :!T1]
+                 [:2 :!T2]
+                 [:3 :!T3]
+                 [:4 :!T4]
+                 [:5 :!T5]
+                 [:6 :!T6]
+                 [:7 :!T7]
+                 [:8 :!T8]
+                 [:9 :!T9]
+                 [:0 :!T0]]}
+        {:des "skey (essential)"
+         :rules [:s-mode
+                 [:e :tab]
+                 [:r :!Stab]
+                 [:i :!CTperiod] ; Contexts search active windows
+                 ;[:p :!COS0] ; Selection -> Typinator snippet
+                 ;[:p :!COS9] ; Clipboard -> Typinator snippet
+                 [:a :!Cc] ; Copy
+                 [:caps_lock :!Cx] ; Cut
+                 [:v :left_shift]
+                 ;[:t :!COp] ; Selection -> HasteBin link
+                 [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
+                 [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
+                 [:d :delete_or_backspace]
+                 [:f :return_or_enter]
+                 [:c :!Cdelete_or_backspace]
+                 [:g :!Ctab]
+                 [:##h :left_arrow]
+                 [:##j :down_arrow]
+                 [:##k :up_arrow]
+                 [:##l :right_arrow]
+                 [:##b :!Cleft_arrow]
+                 [:n :!Cv] ; Paste
+                 [:##m :!Cright_arrow]
+                 [:comma :!COS8] ; Selection -> SnippetsLab
+                 [:semicolon :!TCclose_bracket] ; Search SnippetsLab library with assistant
+                 [:open_bracket [:km "Selected text -> TODO"]]
+                 [:period [:km "Tasks from apps -> TODO"]]
+                 [:o :!CTO9]]} ; Search Typinator
+    ; TODO: check Nikita's 
+    {:des "caps (other)"
+      :rules [:caps-mode
+              [:open_bracket :!TOopen_bracket]
+              [:close_bracket :!TOclose_bracket]
+              [:semicolon :!TOsemicolon]
+              [:quote :!TOquote]
+              [:comma :!TOcomma]
+              [:period :!TOperiod]
+              [:slash :!TOslash]
+              [:a :!TOa]
+              [:b :!TOb]
+              [:c :!Tc]
+              [:d :!Td]
+              [:e :!TOe]
+              [:f :!TOf]
+              [:g :!TOg]
+              [:h :left_arrow]
+              [:i :!TOi]
+              [:j :down_arrow]
+              [:k :up_arrow]
+              [:l :right_arrow]
+              [:m :!TOm]
+              [:n :!TOn]
+              [:o :!TOo]
+              [:p :!TOp]
+              [:q :!TOq]
+              [:r :!TOr]
+              [:s :!TOs]
+              [:t :!TOt]
+              [:u :!TOu]
+              [:v :!TOv]
+              [:w :!TOw]
+              [:x :!TOx]
+              [:y :!TOy]
+              [:z :!Tz]
+              [:1 :!TO1]
+              [:2 :!TO2]
+              [:3 :!TO3]
+              [:4 :!TO4]
+              [:5 :!TO5]
+              [:6 :!TO6]
+              [:7 :!TO7]
+              [:8 :!TO8]
+              [:9 :!TO9]
+              [:0 :!TO0]]}
+      {:des "caps_lock:esc/ctrl" 
+        :rules [[:##caps_lock :left_control nil {:alone :escape}]]}
+    ]
 
 
 
