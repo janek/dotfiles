@@ -1,6 +1,7 @@
 alfred
 ankiapp-anki
 anybar
+android-studio
 balenaetcher
 bettertouchtool
 calibre
@@ -23,6 +24,7 @@ karabiner-elements
 logitech-options
 spotify
 sketch
+sublime-text
 transmission
 mtmr
 veonim
