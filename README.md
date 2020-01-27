@@ -6,7 +6,9 @@
 
 `other_programs.md` - apps that are neither on AppStore nor cask - currently without automatic install solution
 
-## commands
+## steps
+
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` - install brew
 
 `cat cask_list.txt | xargs brew cask install` - install all cask apps
 
