@@ -16,7 +16,6 @@ firefox
 github
 google-chrome
 hammerspoon
-homebrew/cask-drivers/logitech-options
 helium
 iina
 iterm2
@@ -32,6 +31,7 @@ vlc
 wwdc
 zotero
 
+homebrew/cask-drivers/logitech-options
 google-drive-file-stream
 keyboard-maestro
 kite
