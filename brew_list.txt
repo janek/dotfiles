@@ -1,2 +1,7 @@
 mas
 git
+fish
+yqrashawn/goku/goku
+ffmpeg
+youtube-dl
+node
