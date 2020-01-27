@@ -10,6 +10,7 @@ cheatsheet
 daisydisk
 dash
 dbeaver-community
+discord
 drawio
 dropbox
 franz
@@ -22,6 +23,7 @@ iina
 iterm2
 karabiner-elements
 logitech-options
+notion
 spotify
 sketch
 sublime-text
