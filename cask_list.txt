@@ -16,10 +16,12 @@ firefox
 github
 google-chrome
 hammerspoon
+homebrew/cask-drivers/logitech-options
 helium
 iina
 iterm2
 karabiner-elements
+logitech-options
 spotify
 sketch
 transmission
