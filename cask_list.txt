@@ -1,3 +1,4 @@
+alfred
 ankiapp-anki
 anybar
 balenaetcher
