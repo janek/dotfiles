@@ -26,5 +26,5 @@
 
 https://github.com/ptb/mac-setup
 
-
+https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/#the-way-to-find-the-domain--key-responsible-for-a-setting
 
