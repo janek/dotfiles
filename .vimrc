@@ -26,7 +26,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'nelstrom/vim-visual-star-search'
 "Plug 'chaoren/vim-wordmotion'
 Plug 'reedes/vim-pencil'
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-commentary'
 
 " Codel intel.

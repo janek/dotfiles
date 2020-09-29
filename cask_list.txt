@@ -1,5 +1,7 @@
+alfred
 ankiapp-anki
 anybar
+android-studio
 balenaetcher
 bettertouchtool
 calibre
@@ -8,20 +10,24 @@ cheatsheet
 daisydisk
 dash
 dbeaver-community
+discord
 drawio
 dropbox
 franz
 firefox
 github
 google-chrome
-google-drive-file-stream
 hammerspoon
 helium
 iina
 iterm2
 karabiner-elements
+logitech-options
+notion
+selfcontrol
 spotify
 sketch
+sublime-text
 transmission
 mtmr
 veonim
@@ -30,7 +36,8 @@ vlc
 wwdc
 zotero
 
-
+homebrew/cask-drivers/logitech-options
+google-drive-file-stream
 keyboard-maestro
 kite
 wireshark

@@ -6,7 +6,11 @@
 
 `other_programs.md` - apps that are neither on AppStore nor cask - currently without automatic install solution
 
-## commands
+## steps
+
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` - install brew
+
+`cat brew_list.txt | xargs brew install` - install all brew packages/programs
 
 `cat cask_list.txt | xargs brew cask install` - install all cask apps
 
@@ -22,5 +26,5 @@
 
 https://github.com/ptb/mac-setup
 
-
+https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/#the-way-to-find-the-domain--key-responsible-for-a-setting
 
