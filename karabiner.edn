@@ -19,6 +19,7 @@
              :open "open \"%s\""}
 
  :simlayers {:semicolon-mode {:key :semicolon}
+             :quote-mode {:key :quote}
              :a-mode {:key :a}
              :s-mode {:key :s}
              :w-mode {:key :w}
@@ -54,6 +55,36 @@
                  [:n :!Sn]
                  [:m :!Sm]
                  [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
+                 ]}
+        
+        {:des "(mapping) quote -> alt (with letters only)"
+         :rules [:quote-mode
+                 [:q :!Oq]
+                 [:w :!Ow]
+                 [:e :!Oe]
+                 [:r :!Or]
+                 [:t :!Ot]
+                 [:y :!Oy]
+                 [:u :!Ou]
+                 [:i :!Oi]
+                 [:o :!Oo]
+                 [:p :!Op]
+                 [:a :!Oa]
+                 [:s :!Os]
+                 [:d :!Od]
+                 [:f :!Of]
+                 [:g :!Og]
+                 [:h :!Oh]
+                 [:j :!Oj]
+                 [:k :!Ok]
+                 [:l :!Ol]
+                 [:z :!Oz]
+                 [:x :!Ox]
+                 [:c :!Oc]
+                 [:v :!Ov]
+                 [:b :!Ob]
+                 [:n :!On]
+                 [:m :!Om]
                  ]}
 
         {:des "(mostly mapping) akey -> ctrl"
