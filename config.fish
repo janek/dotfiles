@@ -1,0 +1,1 @@
+/Users/janek/.config/fish/config.fish
