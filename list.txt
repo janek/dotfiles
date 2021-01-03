@@ -1,0 +1,182 @@
+ Google Maps.app
+Airfoil.app
+Alexandria.app
+Alfred 4.app
+Amphetamine.app
+Android Studio.app
+Anki.app
+AnkiApp.app
+AnyBar.app
+Asana.app
+Audacity.app
+Audio Hijack.app
+Authy Desktop.app
+Basecamp 3.app
+CMake.app
+Caret Beta.app
+Charles.app
+CheatSheet.app
+Coin Tick.app
+Contexts.app
+Craft.app
+Cyberduck.app
+DBeaver.app
+DaisyDisk.app
+Dash.app
+Day One.app
+DesktopMoon.app
+Discord.app
+Docker.app
+Dropbox.app
+Emacs.app
+Epic Games Launcher.app
+Events - Facebook.app
+Evernote.app
+FSNotes.app
+Fantastical.app
+Figma Beta.app
+Figma.app
+Filemail.app
+Firefox.app
+Flotato.app
+Fresh Cards.app
+GIMP-2.10.app
+Gestimer.app
+GoPro Quik.app
+Google Docs.app
+Google Drive File Stream.app
+Google Earth Pro.app
+Google Sheets.app
+Google Slides.app
+Google Translate.app
+HBO Now.app
+HDFView.app
+HP Smart.app
+Hammerspoon.app
+HandShaker.app
+Helium.app
+Hex Fiend.app
+Hidden Bar.app
+Houseparty.app
+IINA.app
+Immersed.app
+Install macOS Big Sur.app
+Instapaper Save.app
+Karabiner-Elements.app
+Karabiner-EventViewer.app
+Keka.app
+KeyCastr.app
+Keyboard Maestro.app
+Keynote.app
+Kindle.app
+Logi Options.app
+MTMR.app
+MacVim.app
+Magnet.app
+Meeter.app
+Melodics.app
+Messenger.app
+MickTagger.app
+Mind+.app
+MindNode.app
+Mnemosyne.app
+MongoDB Compass.app
+MongoHub.app
+Native Access.app
+Native Instruments
+NetSpot.app
+Netflix.app
+Noizio.app
+Notion.app
+Nova.app
+Numbers.app
+OBS.app
+Obsidian.app
+OmniFocus.app
+OmniGraffle.app
+OpenKJ.app
+Opera.app
+Pages.app
+Pi Filler.app
+Poolside FM.app
+Postman.app
+Prime Video.app
+ProtonVPN.app
+Python 3.9
+QMK Toolbox.app
+QNapi.app
+Racket
+Raindrop.io for Safari.app
+Raspberry Pi Imager.app
+Reality Converter.app
+Remote Mouse.app
+Robo 3T.app
+Safari.app
+Samplr Touchbar.app
+ScoreCloud.app
+SelfControl.app
+Shazam.app
+ShutterCount.app
+SideQuest.app
+Signal.app
+Sketch.app
+Skype.app
+Slack.app
+Slay the Spire.app
+Sleep Timer.app
+SoulseekQt.app
+SourceTree.app
+Spark.app
+Speedtest.app
+SpotMenu.app
+Spotify.app
+Steam.app
+Stupidnote.app
+Sublime Text.app
+Surfshark.app
+TeamSpeak 3 Client.app
+Telegram.app
+Telephone.app
+TextSniper.app
+Textual.app
+The Textorcist The Story of Ray Bibbia.app
+Things3.app
+Thought Train.app
+Time Out.app
+Tinkle.app
+Tip.app
+Touch Bar Piano.app
+Transmission.app
+Trello.app
+TripMode.app
+TuneIn.app
+Unity
+Unity Hub.app
+Utilities
+VLC.app
+VOX.app
+Viber.app
+Vieb.app
+Virtual Desktop Streamer.app
+Virtual Desktop Updater.app
+Visual Studio Code.app
+WWDC.app
+Wally
+Wally.app
+WhatsApp.app
+Wipr.app
+Wireshark.app
+Xcode.app
+Zeplin.app
+Zotero.app
+adbLink.app
+balenaEtcher.app
+calibre.app
+draw.io.app
+flowkey.app
+iTerm.app
+iTrash.app
+list.txt
+nteract.app
+veonim.app
+zoom.us.app
