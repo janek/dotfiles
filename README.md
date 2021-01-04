@@ -12,7 +12,7 @@
 
 `cat brew_list.txt | xargs brew install` - install all brew packages/programs
 
-`cat cask_list.txt | xargs brew cask install` - install all cask apps
+`cat cask_list.txt | xargs brew install --cask` - install all cask apps
 
 `awk '{print $1}' mas_list.txt | xargs mas install` - install all App Store apps
 
