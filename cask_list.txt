@@ -25,6 +25,7 @@ karabiner-elements
 logitech-options
 notion
 selfcontrol
+sourcetree
 spotify
 sketch
 sublime-text
