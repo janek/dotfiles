@@ -1,6 +1,8 @@
 mas
 git
 fish
+python
+
 yqrashawn/goku/goku
 ffmpeg
 youtube-dl
