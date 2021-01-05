@@ -1,5 +1,5 @@
 alfred
-ankiapp-anki
+anki
 anybar
 android-studio
 balenaetcher
