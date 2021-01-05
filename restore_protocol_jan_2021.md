@@ -13,6 +13,7 @@ Restore protocol
 
 
 - [ ] START: check out dotbot in context of notes here. seems good.
+- generate and save new mas_list.txt
 - consider having separate lists for setup-essentials for a much quicker setup (don't be stuck installing sketch or spark for ages)
 - might need a symlink hookup solution (export all the dotfiles from .dotfiles to where they should be). Try to keep it minimal or look at other people's repos
 	- danijar's solution is good
