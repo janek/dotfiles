@@ -95,7 +95,7 @@ Point-to-preferences required:
 ### Archive
 
 - switch default python - I guess not really, all of a sudden it's the newest (maybe after brew install?)
-- anki cards were not synced :( but enabled
+- FAIL: anki cards were not synced :(
 - consider having a separate list for totally optional things (like terminal-notifier) [ -> added to other_programs.md]
 - add notes on sunsetting old computer (meaning writing down apps)
 - Error: You have not agreed to the Xcode license. Please resolve this by running:
