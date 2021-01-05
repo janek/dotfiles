@@ -23,6 +23,9 @@ keka
 logitech-options
 messenger 
 notion
+obs
+obsidian
+omnifocus
 opera
 selfcontrol
 sourcetree
@@ -35,6 +38,7 @@ vlc
 whatsapp
 wwdc
 zotero
+zoom
 
 homebrew/cask-drivers/logitech-options
 keyboard-maestro
