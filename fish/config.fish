@@ -9,3 +9,7 @@ function fish_user_key_bindings
     bind -M insert \cf accept-autosuggestion execute
 end
 
+# TODO: these abbreviations might belong somewhere else 
+abbr -a -g bi brew install
+abbr -a -g bic brew install cask
+
