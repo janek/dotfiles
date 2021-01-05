@@ -1,4 +1,4 @@
-### This is a list of programs that I might want to use, but was not able to easily install via script
+### Programs that I might want to use, but was not able to easily install via script
 MongoHub.app
 Notion.app
 nteract.app
@@ -13,3 +13,7 @@ Sourcetree.app
 Steam.app
 TeamViewer.app
 Touch Bar Piano.app
+
+### "Extras" - interesting, but don't want installed automatically 
+
+brew install terminal-notifier
