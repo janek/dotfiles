@@ -15,12 +15,23 @@ Restore protocol
 - [ ] START: check out dotbot in context of notes here. seems good.
 - generate and save new mas_list.txt
 - consider having separate lists for setup-essentials for a much quicker setup (don't be stuck installing sketch or spark for ages)
+
+- do-nothing script for backup and rebuild:
+	- have you backed up your kmmacros? anki? other content? 
+
+- ln -sv ~/.dotfiles/fish/ .
+	ln -sv ~/.dotfiles/karabiner.edn .
 - might need a symlink hookup solution (export all the dotfiles from .dotfiles to where they should be). Try to keep it minimal or look at other people's repos
 	- danijar's solution is good
 	- alternative is dotbot (but then you maintain a list that maps them)
 		- but the yaml can also keep nice things 4 u (like scripts)
 
 - consider having a single file
+
+- Fonts:
+	- https://github.com/belluzj/fantasque-sans/releases/download/v1.8.0/FantasqueSansMono-NoLoopK.tar.gz
+
+- manually restoring macros :( )
 
 
 ### Steps:
@@ -38,7 +49,7 @@ Restore protocol
 	> echo /usr/local/bin/fish | sudo tee -a /etc/shells
 	> chsh -s /usr/local/bin/fish
 
-
+- login items
 
 
 - implement defaults
