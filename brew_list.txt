@@ -1,9 +1,12 @@
 mas
 git
 fish
+bat
 python
 
 yqrashawn/goku/goku
+koekeishiya/formulae/yabai
+yabai
 ffmpeg
 youtube-dl
 node
