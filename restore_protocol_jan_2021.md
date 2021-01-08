@@ -32,6 +32,14 @@ Restore protocol
 	- https://github.com/belluzj/fantasque-sans/releases/download/v1.8.0/FantasqueSansMono-NoLoopK.tar.gz
 
 - manually restoring macros :( )
+- installing yabai is a pain
+- installing doom emacs:
+	# required dependencies
+	brew install git ripgrep
+	# optional dependencies
+	brew install coreutils fd
+	# Installs clang
+	xcode-select --install
 
 
 ### Steps:

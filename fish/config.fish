@@ -12,5 +12,5 @@ end
 # TODO: these abbreviations might belong somewhere else 
 abbr -a -g bi brew install
 abbr -a -g bs brew search
-abbr -a -g bic brew install cask
+abbr -a -g bic brew install --cask
 
