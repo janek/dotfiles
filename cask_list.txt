@@ -28,6 +28,8 @@ obsidian
 omnifocus
 opera
 selfcontrol
+sidequest
+surfshark
 sourcetree
 spotify
 sketch
@@ -42,3 +44,4 @@ zoom
 
 homebrew/cask-drivers/logitech-options
 keyboard-maestro
+
