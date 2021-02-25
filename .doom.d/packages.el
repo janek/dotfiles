@@ -49,4 +49,5 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 
-(package! ag)
+(package! ag) ;; search
+(package! heaven-and-hell) ;; quickly switch themes (light/dark in particular)

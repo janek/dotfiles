@@ -25,7 +25,20 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-one-light)
+
+;; Theme switcher config (https://github.com/valignatev/heaven-and-hell)
+(after! heaven-and-hell
+  (setq heaven-and-hell-themes
+        '((light . doom-one-light)
+          (dark . doom-vibrant)))
+  ;; Optional, load themes without asking for confirmation.
+  (setq heaven-and-hell-load-theme-no-confirm t)
+  (map!
+   :g "<f6>" 'heaven-and-hell-toggle-theme
+   ;; Sometimes loading default theme is broken. I couldn't figured that out yet.
+   :leader "<f6>" 'heaven-and-hell-load-default-theme))
+(add-hook 'after-init-hook 'heaven-and-hell-init-hook)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
