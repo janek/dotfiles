@@ -101,6 +101,7 @@ SETUVAR _fish_abbr_gsts:git\x20stash\x20show\x20\x2d\x2dtext
 SETUVAR _fish_abbr_gunignore:git\x20update\x2dindex\x20\x2d\x2dno\x2dassume\x2dunchanged
 SETUVAR _fish_abbr_gup:git\x20pull\x20\x2d\x2drebase
 SETUVAR _fish_abbr_gwch:git\x20whatchanged\x20\x2dp\x20\x2d\x2dabbrev\x2dcommit\x20\x2d\x2dpretty\x3dmedium
+SETUVAR _fish_abbr_sshcp:ssh\x2dcopy\x2did\x20\x2di\x20/Users/janek/\x2essh/id_rsa\x2epub\x20pi\x40
 SETUVAR fish_color_autosuggestion:969896
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:c397d8
